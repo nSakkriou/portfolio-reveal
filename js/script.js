@@ -1,9 +1,11 @@
+// Liste des projets
+
 const projets_list = [
     {
         "name" : "Path Optimizer",
-        "description" : "lorem",
-        "github_url" : "github.com",
-        "tags_techno" : ["React.js", "TypeScript"]
+        "description" : "Api permettant de créer le chemin le plus optimisé a partir d'une liste de lieux",
+        "github_url" : "https://github.com/nSakkriou/path_optimizer",
+        "tags_techno" : ["Python", "Fastapi"]
     }
 ]
 
@@ -17,6 +19,7 @@ const add_project = (projets_list) =>{
         
         let section = document.createElement("section")
         section.id = `projet-${i}`
+        section.dataset.transition = "fade-in fade-out"
         i ++
 
         let h1 = document.createElement("h1")
@@ -30,9 +33,11 @@ const add_project = (projets_list) =>{
         let a = document.createElement("a")
         a.textContent = "Voir le projet"
         a.href = projet.github_url
+        a.classList = "link"
         section.appendChild(a)
 
         let tag_div = document.createElement("div")
+        tag_div.className = "tag-list"
 
         projet.tags_techno.forEach(tag => {
             let span = document.createElement("span")
@@ -50,3 +55,39 @@ const add_project = (projets_list) =>{
 
 
 add_project(projets_list)
+
+
+// URL des icones de la slide contact
+const urls_socialmedia = {
+    "github" : "https://www.w3schools.com/w3css/w3css_tags.asp",
+    "twitter" : "https://www.w3schools.com/w3css/w3css_tags.asp",
+    "linkedin" : "https://www.w3schools.com/w3css/w3css_tags.asp"
+}
+
+for (const [key, value] of Object.entries(urls_socialmedia)) {
+    let elem = document.querySelector(`.fa-${key}`)
+    elem.addEventListener("click", (e) => {
+        let a = document.createElement("a")
+        a.href = value
+        a.click()
+    })
+}
+
+// Ajout de l'année actuelle
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// Ajout de l'age
+function getAge(DOB) {
+    var today = new Date();
+    var birthDate = new Date(DOB);
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age = age - 1;
+    }
+
+    return age;
+}
+
+// Age about me
+document.getElementById("age").textContent = getAge("10/17/2002")

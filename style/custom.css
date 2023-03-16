@@ -23,6 +23,9 @@
     --r-link-color-hover: #78b9e6;
     --r-selection-background-color: #d33682;
     --r-selection-color: #fff;
+
+    --r-dark-main-color: #53646b;
+
 }
 
 /* ------- CUSTOM CSS -------- */
@@ -31,6 +34,68 @@
     text-align: left;
 }
 
+.reveal .small-p{
+    font-size: 0.50em;
+}
+
 .reveal #contact{
     text-align: right;
 }
+
+.fa, .small-p, .sub-paragraph {
+    transition: 0.3s ease-in-out;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.fa:hover{
+    color: var(--r-dark-main-color);
+}
+
+.tag-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reveal .link {
+    color: var(--r-main-color);
+    transition: 0.3s ease-in-out;
+}
+
+.reveal #copyright{
+    font-size: 12px;
+    padding-top: 15vh;
+}
+
+.reveal .tag{
+    background-color: var(--r-main-color);
+    color: var(--r-background-color);
+    border-radius: 500px;
+    padding: 0.75em;
+}
+
+.reveal #skills-list{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.reveal .skill-panel{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    gap: 32px;
+}
+
+.skill-logo {
+    transition: 0.3s ease-in-out;
+}
+
+.skill-logo:hover, .small-p:hover, .sub-paragraph:hover {
+    color: var(--r-link-color-hover);
+}
+

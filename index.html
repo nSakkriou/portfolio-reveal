@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="style/custom.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/19bb0f7931.js"></script>
 </head>
 <body>
 
@@ -20,16 +21,46 @@
             <section id="first">
                 <h1>Nathan Sakkriou</h1>
                 <h3 class="sub-paragraph">Je suis alternant en développement FULL STACK</h3>
+                <p class="small-p">J'ai pour passion de créer et d'apprendre</p>
+
             </section>
 
             <section id="about">
                 
                 <section id="about-me">
-                    <h1>Me</h1>
+                    <h1>Qui je suis ?</h1>
+                    <p>Je m'appelle Nathan, j'ai <span id="age"></span> ans, et je suis actuellement étudiant à l'école Sup de Vinci en alternance dans le cursus de développeur full stack </p>
                 </section>
 
                 <section id="about-techno">
                     <h1>Techno</h1>
+
+                    <div id="skills-list">
+                        <div id="front" class="skill-panel">
+                            <i class="fa-brands fa-html5 skill-logo" style="font-size: 64px;"></i>
+                            <i class="fa-brands fa-css3-alt skill-logo" style="font-size: 64px;"></i>
+                            <i class="fa-brands fa-square-js skill-logo" style="font-size: 64px;"></i>
+                            <i class="fa-brands fa-react skill-logo" style="font-size: 64px;"></i>
+                            <h4>Front</h4>
+                        </div>
+
+                        <div id="back" class="skill-panel">
+                            <i class="fa-brands fa-java skill-logo" style="font-size: 64px;"></i>
+                            <i class="fa-brands fa-node skill-logo" style="font-size: 64px;"></i>
+                            <i class="fa-brands fa-python skill-logo" style="font-size: 64px;"></i>
+                            <i class="fa-solid fa-minus skill-logo" style="font-size: 64px;"></i>
+                            <h4>Back</h4>
+                        </div>
+
+                        <div id="tools" class="skill-panel">
+                            <i class="fa-brands fa-linux skill-logo" style="font-size: 64px;"></i>
+                            <i class="fa-solid fa-database skill-logo" style="font-size: 64px;"></i>
+                            <i class="fa-brands fa-jenkins skill-logo" style="font-size: 64px;"></i>
+                            <i class="fa-solid fa-minus skill-logo" style="font-size: 64px;"></i>
+                            <h4>Outils</h4>
+                        </div>
+                    </div>
+
                 </section>
 
                 <section id="about-sport">
@@ -49,8 +80,13 @@
             <section id="contact">
                 <h1>Contact</h1>
                 <div class="row">
-                    <i class="fa fa-github" style="font-size:48px;"></i>
+                    <i class="fa clickable fa-github" style="font-size:48px;"></i>
+                    <i class="fa clickable fa-twitter" style="font-size:48px;"></i>
+                    <i class="fa clickable fa-linkedin" style="font-size:48px;"></i>
                 </div>
+
+                <a class="link" href="mailto:nathansakkriou@gmail.com">nathansakkriou@gmail.com</a>
+                <p id="copyright">© <span id="year"></span> Nathan SAKKRIOU, Tous droits réservés.</p>
 
 
             </section>
