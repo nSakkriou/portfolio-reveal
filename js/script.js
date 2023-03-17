@@ -6,6 +6,13 @@ const projets_list = [
         "description" : "Api permettant de créer le chemin le plus optimisé a partir d'une liste de lieux",
         "github_url" : "https://github.com/nSakkriou/path_optimizer",
         "tags_techno" : ["Python", "Fastapi"]
+    },
+
+    {
+        "name" : "Portfolio",
+        "description" : "Ce même portfolio",
+        "github_url" : "https://github.com/nSakkriou/portfolio-reveal",
+        "tags_techno" : ["Html", "CSS", "JS", "reveal.js"]
     }
 ]
 
@@ -19,7 +26,6 @@ const add_project = (projets_list) =>{
         
         let section = document.createElement("section")
         section.id = `projet-${i}`
-        section.dataset.transition = "fade-in fade-out"
         i ++
 
         let h1 = document.createElement("h1")
@@ -91,3 +97,19 @@ function getAge(DOB) {
 
 // Age about me
 document.getElementById("age").textContent = getAge("10/17/2002")
+
+// Title animation
+let titles = document.querySelectorAll("h1")
+
+titles.forEach(title => {
+    let letters = title.textContent.split("")
+    title.textContent = ""
+    
+    letters.forEach( letter => {
+        let span = document.createElement("span")
+        span.textContent = letter
+        span.className = "letter-title"
+        
+        title.appendChild(span)
+    })
+})
