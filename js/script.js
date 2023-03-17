@@ -62,9 +62,9 @@ add_project(projets_list)
 
 // URL des icones de la slide contact
 const urls_socialmedia = {
-    "github" : "https://www.w3schools.com/w3css/w3css_tags.asp",
-    "twitter" : "https://www.w3schools.com/w3css/w3css_tags.asp",
-    "linkedin" : "https://www.w3schools.com/w3css/w3css_tags.asp"
+    "github" : "https://github.com/nSakkriou",
+    "twitter" : "https://twitter.com/Nasakkriou",
+    "linkedin" : "https://www.linkedin.com/in/nathan-sakkriou-b3771124b/"
 }
 
 for (const [key, value] of Object.entries(urls_socialmedia)) {

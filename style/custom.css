@@ -109,3 +109,8 @@
 .skill-logo:hover, .small-p:hover, .sub-paragraph:hover, .letter-title:hover{
     color: var(--r-link-color-hover);
 }
+
+.col {
+    display: flex;
+    flex-flow: column nowrap;
+}
