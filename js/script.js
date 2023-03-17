@@ -19,7 +19,6 @@ const projets_list = [
 const add_project = (projets_list) =>{
 
     let projetSection = document.getElementById("project")
-    console.log(projetSection)
 
     let i = 1
     projets_list.forEach(projet => {
@@ -52,8 +51,6 @@ const add_project = (projets_list) =>{
             tag_div.appendChild(span)
         })
         section.appendChild(tag_div)
-
-        console.log(section)
 
         projetSection.appendChild(section)
     });
