@@ -34,10 +34,6 @@
     text-align: left;
 }
 
-.reveal .letter-title:hover{
-
-}
-
 .reveal .small-p{
     font-size: 0.50em;
 }
@@ -113,4 +109,10 @@
 .col {
     display: flex;
     flex-flow: column nowrap;
+}
+
+.nestjs {
+    background-image: url(../assets/nestjs.svg);
+    width: 100px;
+    height: 100px;
 }
