@@ -97,16 +97,16 @@ document.getElementById("age").textContent = getAge("10/17/2002")
 
 // Title animation
 let titles = document.querySelectorAll("h1")
+let letters = null
 
 titles.forEach(title => {
-    let letters = title.textContent.split("")
+    letters = title.textContent.split("")
     title.textContent = ""
     
     letters.forEach( letter => {
         let span = document.createElement("span")
         span.textContent = letter
-        span.className = "letter-title"
-        
+        span.className = "letter-title"        
         title.appendChild(span)
     })
 })

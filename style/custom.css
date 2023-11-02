@@ -43,7 +43,7 @@
 }
 
 .fa, .small-p, .sub-paragraph, .letter-title {
-    transition: 0.3s ease-in-out;
+    transition: 0.3s all ease-in-out;
 }
 
 .clickable {
@@ -103,6 +103,10 @@
 }
 
 .skill-logo:hover, .small-p:hover, .sub-paragraph:hover, .letter-title:hover{
+    color: var(--r-link-color-hover);
+}
+
+.anim{
     color: var(--r-link-color-hover);
 }
 
